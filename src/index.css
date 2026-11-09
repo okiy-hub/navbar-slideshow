@@ -1,0 +1,277 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fbfc;
+  color: #263b45;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: white;
+  padding: 14px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+  color: #087f8c !important;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  margin-left: 20px;
+  color: #485d66;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+/* MENU AKTIF */
+.navbar-custom .nav-link.active {
+  color: #087f8c !important;
+  font-weight: bold;
+  border-bottom: 2px solid #087f8c;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #087f8c;
+}
+
+/* CAROUSEL */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  pointer-events: none;
+}
+
+.hero-caption {
+  left: 12%;
+  right: 12%;
+  bottom: 20%;
+  text-align: left;
+  color: white;
+}
+
+.hero-caption h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero-caption p {
+  font-size: 17px;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+/* TOMBOL */
+.btn-utama,
+.btn-card {
+  background-color: #087f8c !important;
+  border: 1px solid #087f8c !important;
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.btn-utama:hover,
+.btn-card:hover {
+  background-color: #05636d !important;
+}
+
+/* SECTION */
+.section-content {
+  padding: 85px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2,
+.about-section h2 {
+  color: #174f59;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  color: #687c83;
+  font-size: 16px;
+}
+
+/* KARTU DESTINASI */
+.wisata-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.wisata-card:hover {
+  transform: translateY(-5px);
+}
+
+.wisata-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.wisata-card .card-body {
+  padding: 24px;
+}
+
+.lokasi {
+  color: #087f8c;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.wisata-card .card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #174f59;
+}
+
+.wisata-card .card-text {
+  color: #697980;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* TENTANG KAMI */
+.about-section {
+  background-color: #e8f4f5;
+}
+
+.about-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  color: #52666e;
+}
+
+/* KONTAK */
+.contact-box {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.contact-box .form-control:focus,
+.contact-box .form-select:focus {
+  border-color: #087f8c;
+  box-shadow: 0 0 0 0.2rem rgba(8, 127, 140, 0.15);
+}
+
+.pesan-sukses {
+  color: #267448;
+  margin-top: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #174f59;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 991px) {
+  .navbar-custom .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .carousel-image {
+    height: 430px;
+  }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 576px) {
+  .brand {
+    font-size: 19px;
+  }
+
+  .carousel-image {
+    height: 360px;
+  }
+
+  .hero-caption {
+    left: 13%;
+    right: 13%;
+    bottom: 15%;
+  }
+
+  .hero-caption h1 {
+    font-size: 26px;
+  }
+
+  .hero-caption p {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .btn-utama {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .section-content {
+    padding: 55px 0;
+  }
+
+  .section-heading h2,
+  .about-section h2 {
+    font-size: 25px;
+  }
+
+  .about-image {
+    height: 250px;
+  }
+
+  .contact-box {
+    padding: 22px;
+  }
+}
